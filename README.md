@@ -3,9 +3,13 @@
 This API contains a `users` endpoint that performs a simple CRUD operation:
 
 `GET    /api/users`
+
 `POST   /api/users`
+
 `DELETE /api/users/:id`
+
 `PUT    /api/users/:id`
+
 
 ### Data structure
 
@@ -15,10 +19,10 @@ The data structure needed to create a user(JSON):
 
 ```
 {
-	user: {
-		name: "My Name",
-		job: "My Job"
-	}
+  user: {
+    name: "My Name",
+    job: "My Job"
+  }
 }
 ```
 
