@@ -1,24 +1,30 @@
-# README
+# API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This API contains a `users` endpoint that performs a simple CRUD operation:
 
-Things you may want to cover:
+`GET    /api/users`
+`POST   /api/users`
+`DELETE /api/users/:id`
+`PUT    /api/users/:id`
 
-* Ruby version
+### Data structure
 
-* System dependencies
+The data structure needed to create a user(JSON):
 
-* Configuration
+`POST /api/users`
 
-* Database creation
+```
+{
+	user: {
+		name: "My Name",
+		job: "My Job"
+	}
+}
+```
 
-* Database initialization
+### Specs
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To run specs:
+```
+rspec
+```
